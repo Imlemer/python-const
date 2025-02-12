@@ -1,6 +1,6 @@
 # Info
 
-The program uses the "watchpoints" module to track changes of variables and raise an error if a constant changes
+The program uses the "watchpoints" library to track changes of variables and raise an error if a constant changes
 
 # Guide
 
@@ -25,4 +25,5 @@ myconst = const(5) # Declare a constant with the "const" class
 myconst = 1 # <- This will not raise a ConstChangedError, since the "activate" function was not ran
 ```
 
-Please do not declare constant variables after the "activate" function, since they will not work
+Please do not declare constant variables after the "activate" function, since the program will not work.
+Please do not run the "activate" function multiple times
